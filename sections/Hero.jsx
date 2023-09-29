@@ -1,14 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import styles from "../styles/index";
-import {
-  slideIn,
-  staggerContainer,
-  textContainer,
-  textVariant,
-} from "../utils/motion";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm-pl-16 pl-6`}>
@@ -43,14 +37,18 @@ const Hero = () => (
         <img
           src="/cover.png"
           alt="cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-[10] relative"
+          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
 
-        <img
-          src="/stamp.png"
-          alt="stamp"
-          className="object-contain absolute -mb-[50px] w-[100px] z-[10] h-[100px] bottom-0 right-0 opacity-[0.9]"
-        />
+        <a href="#explore">
+          <div className="w-full flex justify-end  sm:-mt-[70px] -mt-[10px] pr-[40px] relative z-10">
+            <img
+              src="/stamp.png"
+              alt="stamp"
+              className="object-contain  w-[100px] sm:w-[150px] z-[10] h-[100px] opacity-[0.9]"
+            />
+          </div>
+        </a>
       </motion.div>
     </motion.div>
   </section>
